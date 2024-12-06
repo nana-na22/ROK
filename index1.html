@@ -82,7 +82,7 @@ html
 <body>
 
 <div class="container">
-  <h2>Kingdom 3522</h2>
+  <h2>Kingdom 3522 KPI Calculator 2</h2>
   <input type="text" id="powerInput" placeholder="Enter Power" onkeyup="formatNumber(this)">
   <button onclick="calculateRequirement()">Calculate DKP</button>
   
@@ -144,9 +144,9 @@ function calculateRequirement() {
   let dkpGoal, deadRequirement, category;
 
   if (power >= 50000000) {
-    dkpGoal = power * 0.25;
-    deadRequirement = power * 0.025;
-    category = '25% DKP and 2.5% Dead Requirement category';
+    dkpGoal = power * 0.3;
+    deadRequirement = power * 0.03;
+    category = '30% DKP and 3% Dead Requirement category';
   } else {
     dkpGoal = power * 0.2;
     deadRequirement = power * 0.02;
